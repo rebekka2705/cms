@@ -1,0 +1,11 @@
+$base-color: #00b9f2;
+$font: 'Arvo', serif;
+
+body{
+    font-family: $font;
+}
+
+//importiert alle anderen scss files und index.js exportiert in css file
+@import "navbar";
+
+
