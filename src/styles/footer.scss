@@ -1,0 +1,13 @@
+footer{
+    background-color:#00b9f2;
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #copyright{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
