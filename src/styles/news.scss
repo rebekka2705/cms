@@ -1,0 +1,22 @@
+#news{
+    width: auto;
+    margin-left:  1px ;
+    margin-right: 1px ;
+    
+    ul{
+        background-color: #faddd3;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    h2
+    {
+        color: $base-color;
+    }
+    a{
+        color: $base-color;
+        text-decoration: none;
+    }
+    li{
+        display:inline;
+    }
+}
