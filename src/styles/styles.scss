@@ -1,4 +1,5 @@
 $base-color: #00b9f2;
+$button-color: #45B348;
 $font: 'Arvo', serif;
 
 body{
@@ -6,8 +7,8 @@ body{
 }
 
 //importiert alle anderen scss files und index.js exportiert in css file
-@import "navbar";
-@import "services";
+@import "header";
 @import "news";
+@import "services";
 
 
