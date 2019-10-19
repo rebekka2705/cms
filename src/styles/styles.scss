@@ -1,5 +1,9 @@
 $base-color: #00b9f2;
 $button-color: #45B348;
+$yellow: #FFFAD8;
+$blue: #C6EFFC;
+$green: #D8EDD6;
+$darkBlue: #00B9F2;
 $font: 'Arvo', serif;
 
 body{
@@ -8,5 +12,5 @@ body{
 
 //importiert alle anderen scss files und index.js exportiert in css file
 @import "header";
-
+@import "references";
 
