@@ -1,19 +1,25 @@
 #references{
     display: grid;
-    grid-template-columns: repeat(8, 12vw);
-    grid-template-rows: repeat(4, 25vh);
+    grid-template-columns: repeat(8, 8fr);
+    grid-template-rows: repeat(3, 28vh);
     justify-content: start;
-    font-size: 160%;
+    font-size: 168%;
+    margin-bottom: 5%;
 
  
     #t_img{
-        background-image: url("../images/dina-meyer.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        //background-image: url("../images/dina-meyer.jpg");
+        //background-repeat: no-repeat;
+        //background-size: cover;
         background-color: $yellow;
         margin: 1%;
         grid-column: 1 / 2;
-        grid-row: 1;   
+        grid-row: 1;
+        /*
+        object-fit: cover;
+        object-position: 57% 0%; 
+        height: 140%;
+        width: 88%;*/
     }
 
 
@@ -22,6 +28,8 @@
         grid-row: 2; 
         background-color: $yellow;
         margin: 0;
+        padding-left: 3%;
+        padding-top: 7%;
     }
 
     >blockquote:nth-child(6){ /*#tom_quote*/
@@ -32,12 +40,18 @@
         padding: 5%;
     }
 
-    >blockquote:nth-child(3)/*t_quote*/{
+    >div:nth-child(3)/*t_quote*/{
         grid-column: 1 / 4;
         grid-row: 3;
         background-color: $yellow;
         margin: 0;
         z-index: 2;
+
+        blockquote{
+            background-color: $yellow;
+            padding-top:2%;
+            margin-left: 3%;
+        }
     }    
     
     
@@ -75,7 +89,10 @@
         
         img{
             float:right;
-            height:50vh;
+            object-fit: scale-down;
+            object-position: right;
+            height: 108%;
+            padding-right: 1%;
         }
     }
 
@@ -93,10 +110,6 @@
         }
     }  
 
-
-
-
-
     
     #mueller_text{
         grid-column: 5 / 9;
@@ -105,6 +118,7 @@
 
         p{
             text-align:right;
+            padding-right: 3%;
         }
     }
 
