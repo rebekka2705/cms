@@ -8,18 +8,13 @@
 
  
     #t_img{
-        //background-image: url("../images/dina-meyer.jpg");
-        //background-repeat: no-repeat;
-        //background-size: cover;
+        background-image: url("../images/dina-meyer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color: $yellow;
         margin: 1%;
         grid-column: 1 / 2;
         grid-row: 1;
-        /*
-        object-fit: cover;
-        object-position: 57% 0%; 
-        height: 140%;
-        width: 88%;*/
     }
 
 

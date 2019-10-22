@@ -12,6 +12,13 @@ body{
     margin: 0px;
 }
 
+main{
+    h2{
+        color: $darkBlue;
+        font-size: 150%;
+    }
+}
+
 //importiert alle anderen scss files und index.js exportiert in css file
 @import "header";
 @import "services";
