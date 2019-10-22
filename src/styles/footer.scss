@@ -1,13 +1,29 @@
 footer{
     background-color:#00b9f2;
     color: white;
+    padding: 5px;
+    margin: 0px;
+
     a{
         text-decoration: none;
         color: white;
     }
+
     #copyright{
+        font-size: 24px;
+        
+    }
+    #footer-flexbox{
         display:flex;
         justify-content: space-between;
         align-items: baseline;
     }
+    #footer-text{
+        display:flex;
+        flex-basis: 50%;
+    }
+
 }
+
+  
+
