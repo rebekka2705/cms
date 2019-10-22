@@ -10,6 +10,14 @@ body{
     font-family: $font;
 }
 
+main{
+    h2{
+        color:$darkBlue;
+        font-size:2.2em;
+        font-weight:lighter;
+    }
+}
+
 //importiert alle anderen scss files und index.js exportiert in css file
 @import "header";
 @import "services";
