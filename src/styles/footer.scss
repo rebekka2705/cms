@@ -3,7 +3,7 @@ footer{
     color: white;
     padding: 5px;
     margin: 0px;
-
+    
     a{
         text-decoration: none;
         color: white;
@@ -19,8 +19,13 @@ footer{
         align-items: baseline;
     }
     #footer-text{
-        display:flex;
-        flex-basis: 50%;
+        
+        width: 500px;
+        
+      
+    }
+    #footer-bottom{
+    margin-bottom: 100px;
     }
 
 }
