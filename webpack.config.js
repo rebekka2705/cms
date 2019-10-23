@@ -25,11 +25,13 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+            },
             
           },
           'css-loader',
-          
           'sass-loader',
         ],
       },
@@ -40,9 +42,6 @@ module.exports = {
           'file-loader',
         ],
       },
-
-
-
 
     ]
   },
