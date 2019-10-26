@@ -37,11 +37,27 @@ module.exports = {
       },
 
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'url-loader',
-        ],
+        test: /\.(gif|jpe?g)$/i,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: '[name].[ext]'
+          }
+        }],
       },
+
+      {
+        test: /\.(png|svg)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            limit: 50000,
+            name: '[name].[ext]'
+          }
+        }],
+      },
+
 
     ]
   },
