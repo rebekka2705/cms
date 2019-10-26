@@ -2,7 +2,7 @@
         nav{
             display:flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: flex-end;
             flex-wrap: nowrap;
 
             h1{
@@ -11,10 +11,11 @@
                 font-weight: lighter;
                 margin: 0;
                 padding-left: 1%;
+                flex-basis: 45%;
             }
         
             ul{
-                flex-basis: 40%;
+                flex-basis: 42%;
 
                 li{
                     display:inline;
@@ -44,7 +45,7 @@
     
     #max{
         margin: 0 0 0 auto;
-        max-width: 37rem;
+        max-width: 39rem;
         padding-top: 1%;
         padding-bottom: 1%;    
 
@@ -71,13 +72,15 @@
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1048px){
 
 
     nav{
         flex-direction:row;
         justify-content: space-around;
         flex-wrap: wrap;
+        align-items: flex-end;
+
 
         .toggleNav{
             display:block;
@@ -87,6 +90,12 @@
             height: 40px;
             flex-grow:1;
             flex-basis:10%;
+
+            span{
+                font-size: 25px;
+                color:black;
+            }
+            
         }
         h1{
             font-size:3rem;
@@ -119,4 +128,25 @@
             margin: 0 auto;
         }
     }
+}
+
+@media only screen and (max-width: 800px){
+
+    nav{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    #hero-img{
+        #max{
+            button{
+                font-size: 80%;
+            }
+            h2{
+                font-size:2.5rem;
+            }
+            
+        }
+    }
+
 }
