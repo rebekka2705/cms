@@ -1,6 +1,7 @@
 import "./styles/styles.scss"
 
 
+
 var burgerMenu = document.querySelector(".toggleNav");
 burgerMenu.addEventListener("click", mobileMenu);
 
