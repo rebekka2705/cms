@@ -18,9 +18,12 @@ footer{
         flex-wrap: wrap;
     }
     #footer-text{
-        
         width: 500px;
-      
+    
+    }
+    #pictures{
+        word-wrap: break-word;
+        max-width: 97%;
     }
     #footer-bottom{
     margin-bottom: 100px;
@@ -48,12 +51,13 @@ footer{
 @media only screen and (max-width: 600px){
 
     footer{
+
         #copyright{
         font-size: 18px; 
         }
         #pictures{
             font-size: 16px; 
-            width: auto;
+           
         }
         #footer-text{
             width: 340px;
@@ -64,22 +68,19 @@ footer{
 @media only screen and (max-width: 330px){
 
     footer{
-      
         
-    #copyright{
-        font-size: 16px; 
-    }
-    #pictures{
-        font-size: 12px; 
-        width: 100%;
-        padding: auto;
-        
-    }
-    #footer-text{
-        
-        width: 310px;
-      
-    }
+        #copyright{
+            font-size: 15px; 
+           
+        }
+        #pictures{
+            font-size: 12px; 
+            
+        }
+        #footer-text{
+            width: 290px;
+            
+        }
     }   
 
 }
