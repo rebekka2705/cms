@@ -4,19 +4,29 @@ $yellow: #FFFAD8;
 $blue: #C6EFFC;
 $green: #D8EDD6;
 $darkBlue: #00B9F2;
-$font: 'Arvo', serif;
+$font: 'Slabo 13px', serif;
 
+$small: 1rem;
+$middle: 1.6rem;
+$big: 2.62rem;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
 
 body{
     font-family: $font;
-    font-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin: 0px;
 }
 
 main{
     h2{
         color:$darkBlue;
-        font-size:2.2em;
+        font-size:$middle;
         font-weight:lighter;
         padding-left: 1%;
     }

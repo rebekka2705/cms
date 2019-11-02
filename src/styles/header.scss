@@ -2,12 +2,11 @@
         nav{
             display:flex;
             justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: nowrap;
+            align-items: baseline;
 
             h1{
                 color: $base-color;
-                font-size: 5rem;
+                font-size: $big;
                 font-weight: lighter;
                 margin: 0;
                 padding-left: 1%;
@@ -15,12 +14,14 @@
             }
         
             ul{
-                flex-basis: 42%;
+                flex-basis: 40%;
+                display:flex;
+                justify-content: space-around;
 
                 li{
                     display:inline;
-                    font-size: 1.5rem;
-                    padding-left: 3%;
+                    font-size: $small;
+                    //padding-left: 3%;
 
                     a:hover{
                         color: $base-color;
@@ -40,24 +41,29 @@
     background-size: cover;
     background-position: center;
     color: $base-color;
-    font-size: 40px;
+    font-size: $big;
     height: 100%;
+
     
     #max{
         margin: 0 0 0 auto;
-        max-width: 39rem;
+        max-width: 40%;
         padding-top: 1%;
         padding-bottom: 1%;    
 
         h2{
            margin-bottom: 0.2em;
+           font-size: $big;
+
+            span{
+                background: white;
+                line-height: 1.35em;
+                font-weight: lighter;
+                padding-left: 1%;  
+            }
         }
         
-        h2 span{
-            background: white;
-            line-height: 1.3em;
-            font-weight: lighter;
-        }
+
         
         button{   
             background: $button-color;     
@@ -65,7 +71,7 @@
             border: none;
             color: white;
             font-family: $font;
-            font-size: 40px;
+            font-size: $middle;
             margin-bottom: 8%;
             padding: 2% 3%;
         }
@@ -98,7 +104,7 @@
             
         }
         h1{
-            font-size:3rem;
+            //font-size:3rem;
             flex-basis:80%;
             flex-grow:1;
         }
@@ -110,22 +116,23 @@
 
         .open{
             display:flex;
-            flex-direction:column;           
+            flex-direction:column;
+            z-index:10;         
             
             li{
                 flex-basis:100%;
             }
         }
     }
-
-    #max{
-
-        font-size: 80%;
-
-        button{
-            padding:0%;
-            font-size: 30px;
-            margin: 0 auto;
+    #hero-img{
+        #max{
+            max-width: 50%;
+            font-size: 80%;
+            button{
+                padding:0%;
+                font-size: 30px;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -134,16 +141,17 @@
 
     nav{
         h1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
     #hero-img{
         #max{
+            max-width: 100%;
             button{
-                font-size: 80%;
+                font-size: 1rem;
             }
             h2{
-                font-size:2.5rem;
+                font-size:2rem;
             }
             
         }

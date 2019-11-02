@@ -55,7 +55,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             limit: 50000,
-            name: '[name].[ext]'
+            //name: '[name].[ext]'
           }
         }],
       }, 
@@ -75,7 +75,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "./src/index.html",
       inject: true
     }),
     new MiniCssExtractPlugin({
