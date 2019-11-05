@@ -58,18 +58,7 @@ module.exports = {
             //name: '[name].[ext]'
           }
         }],
-      }, 
-
-      {
-        test: /\.(html)$/,
-        use: {
-            loader: 'html-loader',
-            options: {
-                attrs: ['img:src']
-            }
-        }
-    }
-      
+      },  
     ],
   },
 
