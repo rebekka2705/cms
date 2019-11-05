@@ -23,6 +23,9 @@
                     font-size: $small;
                     //padding-left: 3%;
 
+                    a{
+                     text-decoration: none;
+                    }
                     a:hover{
                         color: $base-color;
                         border-bottom: 3px solid $base-color;
@@ -36,16 +39,31 @@
             }
         }
 
-#hero-img{
-    background-image: url(../images/illuminated-keyboard-1242287.jpg);
-    background-size: cover;
-    background-position: center;
+.hero{
+
+   
     color: $base-color;
     font-size: $big;
     height: 100%;
 
-    
-    #max{
+    &__index {
+        background-image: url(../images/illuminated-keyboard-1242287.jpg);
+        background-size: cover;
+        background-position: center;
+    } 
+
+    &__about{
+        background-image: url(../images/about.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+    &__text{
+        color: $base-color;
+        font-size: $big;
         margin: 0 0 0 auto;
         max-width: 40%;
         padding-top: 1%;
@@ -124,8 +142,8 @@
             }
         }
     }
-    #hero-img{
-        #max{
+    .hero__index{
+        &__text{
             max-width: 50%;
             font-size: 80%;
         }
@@ -139,8 +157,8 @@
             font-size: 2rem;
         }
     }
-    #hero-img{
-        #max{
+    .hero__index{
+        &__text{
             max-width: 100%;
             button{
                 font-size: 1rem;

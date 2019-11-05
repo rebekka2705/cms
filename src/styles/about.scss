@@ -1,0 +1,13 @@
+.about{
+    &__text{
+        margin: 8% 20% 8% 20%;
+        line-height: 1.5;
+        border: 1.5px solid $base-color;
+        box-shadow: 10px 10px 5px $base-color;
+        padding: 3%;
+
+        p{
+         padding-left:1%;
+        }
+    }
+}
