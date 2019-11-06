@@ -1,0 +1,81 @@
+<?php 
+$section = "index";
+include './partials/header.php';
+?>
+
+<div class="hero__text">
+                <h2><span>Glänzende Ideen</span><br><span>für leuchtende</span><br><span>Augen</span> </span></h2>
+                <button>Angebot einholen</button>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <h2>Leistungen</h2>
+        <section id="services">
+           
+            
+            <div id="Design">
+                <a href=#>
+                   <h3>Design</h3>
+                    <img src='../images/design.png' alt="pencils">   
+                </a>
+            </div>
+
+            <div id="Strategie">
+                <a href=#>
+                    <h3>Strategie</h3>
+                    <img src='../images/strategy.png' alt="target">
+                </a>
+            </div>
+
+            <div id="Consulting">
+                <a href=#>
+                    <h3>Consulting</h3>
+                    <img src='../images/consulting.png' alt="lightbulb">
+                </a>
+            </div>
+        </section>
+
+        <h2>News</h2>
+        <section id="news">
+                
+            <ul>
+                <li><p><a href=#>365 Postkarten</a> - Eine Liebeserklärung für jeden Tag!<a href=#>[mehr erfahren]</a></p></li>
+                <li><p><a href=#>Award Nominierung</a> - Tolle News: ich bin bei der Endauswahl 2018!<a href=#>[mehr erfahren]</a></p></li>
+                <li><p><a href=#>CMYK erklärt</a> - der neueste <a href=#>Blog</a>-Eintrag<a href=#>[mehr erfahren]</a></p></li>
+            </ul>
+        </section>
+        
+        
+        <h2>Referenzen</h2>
+        <section id="references">
+            
+            <div id="t_img"></div>
+            <p id="t_name">Tina Ubuntu, CEO headless Ltd.</p>
+            <div id="t_quote"><blockquote>Alex' Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20% in die Höhe zu treiben</blockquote></div>
+           
+            <div id="tom_img"></div>
+            <div id="tom_name"><p>Tom Herzog, Cutter's Finest</p></div>
+            <blockquote id="tom_quote">Große Webkunst - keine Kunst mit Alex Mayer!</blockquote>
+            
+            <div id="quotes"> <img src='./images/quotation_mark.svg' alt="quotes"></div>
+
+            <div id="mueller_img"></div>
+            <div id="mueller_text">
+                <p id="mueller_name"><cite>Vorstand Müller AG <br> KR Ernst Anker, Dr. Florian Eisner</cite></p>
+                <blockquote id="mueller_quote">Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen übertroffen</blockquote>
+            </div>
+          
+            
+        </section>
+
+
+    </main>
+
+
+
+<?php
+include './partials/footer.php'
+?>
