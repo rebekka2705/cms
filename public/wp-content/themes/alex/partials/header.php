@@ -1,4 +1,4 @@
-<?php wp_head(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet"> 
     <title>Alex Mayer</title>
-    <link href="style.css" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
 <body>
 
