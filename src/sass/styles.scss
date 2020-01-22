@@ -1,0 +1,43 @@
+$base-color: #00b9f2;
+$button-color: #45B348;
+$yellow: #FFFAD8;
+$blue: #C6EFFC;
+$green: #D8EDD6;
+$darkBlue: #00B9F2;
+$font: 'Slabo 13px', serif;
+
+$small: 1rem;
+$middle: 1.6rem;
+$big: 2.62rem;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    font-family: $font;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 0px;
+}
+
+main{
+    h2{
+        color:$darkBlue;
+        font-size:$middle;
+        font-weight:lighter;
+        padding-left: 1%;
+    }
+}
+
+//importiert alle anderen scss files 
+@import "header";
+@import "services";
+@import "news";
+@import "footer";
+@import "references";
+@import "about";
+
+

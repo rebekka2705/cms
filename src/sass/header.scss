@@ -1,0 +1,176 @@
+  
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            h1{
+                color: $base-color;
+                font-size: $big;
+                font-weight: lighter;
+                margin: 0;
+                padding-left: 1%;
+                flex-basis: 45%;
+            }
+        
+            ul{
+                flex-basis: 40%;
+                display:flex;
+                justify-content: space-around;
+
+                li{
+                    display:inline;
+                    font-size: $small;
+                    //padding-left: 3%;
+
+                    a{
+                     text-decoration: none;
+                     color: black;
+                    }
+                    a:hover{
+                        color: $base-color;
+                        border-bottom: 3px solid $base-color;
+    
+                    }
+                }
+            }
+
+            .toggleNav{
+                display:none;
+            }
+        }
+
+.hero{
+
+   
+    color: $base-color;
+    font-size: $big;
+    height: 100%;
+
+    &__index {
+        background-image: url(../images/illuminated-keyboard-1242287.jpg);
+        background-size: cover;
+        background-position: center;
+    } 
+
+    &__about{
+        background-image: url(../images/about.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+    &__text{
+        color: $base-color;
+        font-size: $big;
+        margin: 0 0 0 auto;
+        max-width: 40%;
+        padding-top: 1%;
+        padding-bottom: 1%;    
+
+        h2{
+           margin-bottom: 0.2em;
+           font-size: $big;
+
+            span{
+                background: white;
+                line-height: 1.35em;
+                font-weight: lighter;
+                padding-left: 1%;  
+            }
+        }
+        
+
+        
+        button{   
+            background: $button-color;     
+            border-radius: 6px;
+            border: none;
+            color: white;
+            font-family: $font;
+            font-size: $middle;
+            margin-bottom: 8%;
+            padding: 2% 3%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1048px){
+
+
+    nav{
+        flex-direction:row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+
+        .toggleNav{
+            display:block;
+            flex-basis:100%;
+            text-decoration: none;
+            float: right;
+            height: 40px;
+            flex-grow:1;
+            flex-basis:10%;
+
+            span{
+                font-size: 25px;
+                color:black;
+            }
+            
+        }
+        h1{
+            //font-size:3rem;
+            flex-basis:80%;
+            flex-grow:1;
+        }
+
+        ul{
+            display:none;
+            flex-basis:100%;
+        } 
+
+        .open{
+            display:flex;
+            flex-direction:column;
+            z-index:10;         
+            
+            li{
+                flex-basis:100%;
+            }
+        }
+    }
+    .hero{
+
+        &__text{
+            max-width: 50%;
+            font-size: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    nav{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .hero{
+
+        &__text{
+            max-width: 100%;
+            button{
+                font-size: 1rem;
+            }
+            h2{
+                font-size:2rem;
+            }
+            
+        }
+    }
+
+}
