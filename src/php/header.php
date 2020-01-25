@@ -1,4 +1,4 @@
-<?php wp_head(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet"> 
     <title>Alex Mayer</title>
     <link href="style.css" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
 <body>
 
@@ -25,5 +26,3 @@
                     </ul>
                 </nav>
 
-
-                <section class="hero__<?php echo $section ?>">

@@ -26,7 +26,7 @@ define( 'DB_NAME', 'db_alex' );
 define( 'DB_USER', 'dbuser_alex' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'A39yncz4!' );
+define( 'DB_PASSWORD', 'Wordpress1!' );
 
 /** MySQL hostname */
 define( 'DB_HOST', '127.0.0.1' );

@@ -2,7 +2,9 @@
 $section = "about";
 include './partials/header.php';
 ?>
+<?php get_header() ?>
 
+<section class="hero__<?php echo $section ?>">
 <div class="hero__text">
                 <h2><span>Glänzende Ideen</span><br><span>für leuchtende</span><br><span>Augen</span> </span></h2>
                 <button>Angebot einholen</button>
@@ -26,7 +28,7 @@ include './partials/header.php';
     </main>
 
 
-
+<?php get_footer() ?>
 <?php
 include './partials/footer.php'
 ?>
