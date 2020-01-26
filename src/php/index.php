@@ -44,6 +44,23 @@ $section = "index";
         <section id="news">
                 
             <ul>
+                
+                <?php $secondary_query = new WP_Query( 'cat=2' );
+                    if ( $secondary_query->have_posts() ) :
+                        while ( $secondary_query->have_posts() ) : $secondary_query->the_post(); ?>
+
+                    <li><p><a href="<?php the_permalink(); ?>"><?php the_title();?></a> -
+                    <?php echo get_the_excerpt() ?>
+                    <a href=#>[mehr erfahren]</a></p></li>
+                <?php endwhile;
+                else : ?>
+                <p>Bald neue Alex-News...</p>
+                <?php endif;
+                wp_reset_postdata();?>
+                
+                
+
+
                 <li><p><a href=#>365 Postkarten</a> - Eine Liebeserklärung für jeden Tag!<a href=#>[mehr erfahren]</a></p></li>
                 <li><p><a href=#>Award Nominierung</a> - Tolle News: ich bin bei der Endauswahl 2018!<a href=#>[mehr erfahren]</a></p></li>
                 <li><p><a href=#>CMYK erklärt</a> - der neueste <a href=#>Blog</a>-Eintrag<a href=#>[mehr erfahren]</a></p></li>

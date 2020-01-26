@@ -25,5 +25,3 @@
                     </ul>
                 </nav>
 
-
-                <section class="hero__<?php echo $section ?>">
